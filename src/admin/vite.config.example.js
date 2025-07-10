@@ -1,12 +1,7 @@
-const { mergeConfig } = require('vite');
+const react = require("@vitejs/plugin-react");
 
-module.exports = (config) => {
-  // Important: always return the modified config
-  return mergeConfig(config, {
-    resolve: {
-      alias: {
-        '@': '/src',
-      },
-    },
-  });
-};
+/** @type {import('vite').UserConfig} */
+module.exports = () => ({
+  plugins: [react()],
+  assetsInclude: ["**/*.png", "**/*.ico", "**/*.svg"],
+});

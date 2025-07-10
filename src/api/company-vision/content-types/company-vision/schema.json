@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "company_visions",
+  "info": {
+    "singularName": "company-vision",
+    "pluralName": "company-visions",
+    "displayName": "Company Vision"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "CompanyVision": {
+      "type": "blocks"
+    }
+  }
+}

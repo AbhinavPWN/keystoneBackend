@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "subheadings",
+  "info": {
+    "singularName": "subheading",
+    "pluralName": "subheadings",
+    "displayName": "Subheading"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Subheading": {
+      "type": "blocks"
+    }
+  }
+}

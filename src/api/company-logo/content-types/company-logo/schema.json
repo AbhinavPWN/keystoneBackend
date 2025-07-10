@@ -1,0 +1,26 @@
+{
+  "kind": "singleType",
+  "collectionName": "company_logos",
+  "info": {
+    "singularName": "company-logo",
+    "pluralName": "company-logos",
+    "displayName": "Company Logo"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "companylogo": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

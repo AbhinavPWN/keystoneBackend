@@ -1,0 +1,19 @@
+{
+  "kind": "singleType",
+  "collectionName": "company_missions",
+  "info": {
+    "singularName": "company-mission",
+    "pluralName": "company-missions",
+    "displayName": "Company Mission"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "companyMission": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

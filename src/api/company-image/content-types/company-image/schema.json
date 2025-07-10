@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "company_images",
+  "info": {
+    "singularName": "company-image",
+    "pluralName": "company-images",
+    "displayName": "Company Image"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "companyImage": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

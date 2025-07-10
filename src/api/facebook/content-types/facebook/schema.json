@@ -1,0 +1,30 @@
+{
+  "kind": "singleType",
+  "collectionName": "facebooks",
+  "info": {
+    "singularName": "facebook",
+    "pluralName": "facebooks",
+    "displayName": "Facebook"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "facebookId": {
+      "type": "string",
+      "required": true
+    },
+    "facebookLogo": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

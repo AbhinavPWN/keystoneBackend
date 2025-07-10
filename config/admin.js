@@ -1,4 +1,5 @@
 module.exports = ({ env }) => ({
+  url: '/keystone-admin-2082',
   auth: {
     secret: env('ADMIN_JWT_SECRET'),
   },
