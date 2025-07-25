@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "positions",
+  "info": {
+    "singularName": "position",
+    "pluralName": "positions",
+    "displayName": "position"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "Rank": {
+      "type": "integer",
+      "required": true,
+      "unique": true
+    },
+    "board_members": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::board-member.board-member",
+      "mappedBy": "position"
+    }
+  }
+}

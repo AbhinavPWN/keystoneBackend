@@ -1,4 +1,3 @@
-
 services:
   strapi:
     build: .
@@ -12,8 +11,16 @@ services:
       - postgres
     volumes:
       - ./public:/app/public
+      - ./src:/app/src
+      - ./config:/app/config
+      - ./package.json:/app/package.json
+      - ./package-lock.json:/app/package-lock.json
+      - ./.env.docker:/app/.env
+      - ./public/uploads:/app/public/uploads
     networks:
       - strapi-network
+    environment:
+      NODE_ENV: ${NODE_ENV:-production}  # Default to production
 
   postgres:
     image: postgres:14

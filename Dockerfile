@@ -1,11 +1,24 @@
+# Use official Node.js image
 FROM node:24
 
+# Set working directory
 WORKDIR /app
+
+# Install dependencies
 COPY package*.json ./
-RUN npm install
+RUN npm ci
+
+# Copy project files
 COPY . .
 
-ENV NODE_ENV development 
-# RUN npm run build
+# Build the Strapi project
+RUN npm run build
+
+# Set production environment
+ENV NODE_ENV=production
+
+# Expose Strapi port
 EXPOSE 1337
-CMD ["npm","run", "develop"]
+
+# Start Strapi in production mode
+CMD ["npm", "run", "start"]

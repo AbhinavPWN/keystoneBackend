@@ -15,10 +15,6 @@
       "type": "string",
       "required": true
     },
-    "Position": {
-      "type": "string",
-      "required": true
-    },
     "Image": {
       "type": "media",
       "multiple": true,
@@ -31,6 +27,12 @@
     "Bio": {
       "type": "blocks",
       "required": true
+    },
+    "position": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::position.position",
+      "inversedBy": "board_members"
     }
   }
 }

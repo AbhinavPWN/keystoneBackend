@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "advisories",
+  "info": {
+    "singularName": "advisory",
+    "pluralName": "advisories",
+    "displayName": "advisory"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}
