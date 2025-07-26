@@ -21,4 +21,4 @@ ENV NODE_ENV=production
 EXPOSE 1337
 
 # Start Strapi in production mode
-CMD ["npm", "run", "start"]
+CMD ["npm", "run","--trace-deprecation", "node_modules/.bin/strapi", "start"]
